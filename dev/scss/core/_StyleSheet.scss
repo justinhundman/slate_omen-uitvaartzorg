@@ -1,0 +1,114 @@
+// StyleSheet
+
+//schema clean-------------------------------------------------------------------------------------------------------------------------------------------------
+
+//base---------
+	$base-backgroundColor:#fff;
+	$base-backgroundImage:#fff;
+	$base-navBack: #dcd2d3;
+	$base-borderColor1: #fff;
+	$base-shadow: 0px 2px 16px #7A6E6E;
+
+//font---------
+	$font-typografie: Quicksand;
+	$font-titel-color: #7A6E6E;
+	$font-subTitel-color: #fff;
+	$font-paragraafTitel-color: #fff;
+// a ----------
+	$a-normal:#7A6E6E;
+	$a-style:#006991;
+//eind clean-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+//base -------------------------------------------------------------------------------------------------------------------------------------------------------
+h4{
+	color:$font-titel-color;
+}
+body{
+	 background-image: $base-backgroundImage ; 
+	 font-family: $font-typografie; 
+}
+.header-boven-contact, .footer-wrapper{
+	//box-shadow: $base-shadow;
+	background:$base-backgroundColor;
+} 
+.header-midden-nav{
+	background: $base-navBack;
+	border-top: 10px solid $base-borderColor1;
+	border-bottom: 10px solid $base-borderColor1;
+	//box-shadow: 0px 2px 16px $base-shadow; 
+}
+.Navigation-listItem{
+  a{
+  	color: $a-normal;
+  }
+}
+.Navigation-list--dropdown{
+	background:$base-navBack;
+}
+.Navigation-listItem.is-active{
+	background:$a-style;
+	a{
+	color:$base-navBack;
+	}
+}
+
+
+.Navigation-listItem:hover{
+	background:lighten($a-style, 10%);
+	a.Navigation-link{
+		color:$base-navBack;
+	}
+}
+.Navigation-listItem--hasDropdown:hover{
+	background:lighten($a-style, 10%);
+	ul{
+		a.Navigation-link{
+		color:$a-normal;
+		}
+	}
+	ul:hover{
+		a.Navigation-link{
+			color:$base-navBack; 
+		}
+	}
+
+}
+.Navigation-listItem--hasDropdown.is-active:hover{
+	a.Navigation-link{
+			color:$base-navBack;
+	}
+}
+
+.Nav-toggle {
+  .Icon.Icon--inline {
+   	fill:$base-borderColor1;
+  }
+}
+.header-onderkant{
+	//box-shadow: 0px 2px 16px $base-shadow;
+	border-bottom: 2px solid $base-borderColor1;
+	background:$base-backgroundColor;
+}
+.threecolumns-wrapper{
+	background: $base-backgroundColor;
+}
+.fullwidth-wrapper{
+	background:$base-backgroundColor;
+}
+.button{
+	background:$base-navBack;
+	color:$a-normal;
+}
+.button:hover{
+	background:lighten($a-style, 10%);
+	color: $base-navBack;
+}
+.footer-wrapper{
+	border-top: 2px solid $base-borderColor1;
+}
+// eind base -------------------------------------------------------------------------------------------------------------------------------------------------
+

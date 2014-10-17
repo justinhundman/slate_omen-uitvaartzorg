@@ -1,0 +1,49 @@
+//header -->
+//------------------------------------------------------------------------------------------------------------------- -->
+
+//boven header
+//------------------------------------------------------------------------------------------------------------------- -->
+.header-boven{}
+
+.header-boven-contact{}
+.header-boven-contact-left{
+  position: relative;
+}
+.header-boven-contact-wrapper1{
+}
+.header-boven-contact-logo{
+  width: 25%;
+  float: right;
+}
+.header-boven-contact-wrapper2{
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+.nummer-icon{
+  width: 5%;
+}
+.header-boven-contact-nummer{
+  text-decoration: none;
+}
+.header-boven-contact-email{
+  text-decoration: none;
+  position: absolute;
+  left: 47%;
+}
+//------------------------------------------------------------------------------------------------------------- -->
+// einde boven header
+
+//midden header
+//------------------------------------------------------------------------------------------------------------- -->
+  // zie scss : _navigation
+//------------------------------------------------------------------------------------------------------------- -->
+//einde midden header
+
+//onderkant header 
+//------------------------------------------------------------------------------------------------------------- -->
+.header-onderkant{
+  padding:0% 0 0 0 ;
+  height: 256px !important;
+}
+//------------------------------------------------------------------------------------------------------------- -->
+//einde onderkant header
