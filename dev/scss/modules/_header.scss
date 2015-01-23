@@ -5,25 +5,41 @@
 //------------------------------------------------------------------------------------------------------------------- -->
 .header-boven{}
 
-.header-boven-contact{}
+.header-boven-contact{
+  padding-left:0;
+  padding-right:0;
+}
 .header-boven-contact-left{
   position: relative;
 }
 .header-boven-contact-wrapper1{
 }
 .header-boven-contact-logo{
-  width: 25%;
-  float: right;
+  width: 45%;
+  float: left;
+  margin-right:4%;
+  margin-top: 0%;
 }
 .header-boven-contact-wrapper2{
   position: relative;
   border-bottom: 1px solid #000;
+  margin-top:2%;
+}
+.header-boven-contact-title{
+  margin-bottom: 2%;
 }
 .nummer-icon{
-  width: 5%;
+  width: 13%;
+  display: block;
 }
 .header-boven-contact-nummer{
   text-decoration: none;
+  margin-top:-28px;
+  float:left;
+  margin-left: 20%;
+  margin-bottom: 2%;
+  font-size: 24px;
+  width: 100%;
 }
 .header-boven-contact-email{
   text-decoration: none;
@@ -42,8 +58,36 @@
 //onderkant header 
 //------------------------------------------------------------------------------------------------------------- -->
 .header-onderkant{
-  padding:0% 0 0 0 ;
-  height: 256px !important;
+  padding:0 ;
+  position: relative;
 }
 //------------------------------------------------------------------------------------------------------------- -->
 //einde onderkant header
+
+// respionsive
+@media all and (max-width: 640px) { 
+  .header-boven{
+    text-align: center;
+  }
+  .header-boven-contact-logo{
+    float: none;
+  }
+  .header-boven-contact-wrapper2{
+    border-bottom: 0;
+    margin-top: 0;
+  }
+}
+@media all and (max-width: 560px) { 
+  .header-onderkant-slider-text {
+    left:0;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+  }
+  .bx-next, .bx-prev{
+    display: none;
+  }
+  .bx-pager.bx-default-pager{
+    display: none;
+  }
+}

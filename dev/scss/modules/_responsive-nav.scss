@@ -42,6 +42,9 @@
 
 .Mob-contact-ico {
 	display: none;
+	position: absolute;
+	top: 10px;
+	left: 4%;
 }
 
 
@@ -66,6 +69,7 @@
 
 	 .Bot-Nav {
 		height: auto;
+		position:relative;
 	 }
 	 #js-navCollapse {
 		display: block;
@@ -93,9 +97,12 @@
 	ul.Navigation-list--dropdown{
 		position:static;
 		margin-top: 0;
+		width: 100%;
 		li.Navigation-listItem {
+
 			a{
 				margin-left: 0;	
+				width:100%;
 			}
 		}
 	}
@@ -165,33 +172,30 @@
 			background-color: transparent;
 			.Icon--inline {
 				fill: white;
-				width: 2em;
-				height: 2em;
-				padding-bottom: 1em;				
+				width: 2.2em;
+				height: 4em;
+				padding:5px 0 32px 2px				
 			}
 		}
 
 		.telsvg {
 			left: 10px;				
 			.Icon--inline {
-				margin: -4px;
-				margin-top: 5px;
+			
 			}
 		}
 
 		.tel2svg {
 			left: 55px;				
 			.Icon--inline {
-				margin: -5px;
-				margin-top: 5px;
+		
 			}
 		}
 
 		.mailsvg {
-			left: 100px;				
+			left: 55px;				
 			.Icon--inline {
-				margin: -4px;
-				margin-top: 5px;
+			
 			}
 		}
 	}

@@ -1,27 +1,27 @@
-
-
-	<?php get_header(); ?>
-  
+<?php
+/*
+Template Name: page 
+*/
+?>
+<?php get_header(); ?>
 
 	<div>
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div class="Content Content--fullwidth u-gridContainer page-wrapper u-gridRow " id="post-<?php the_ID(); ?>">
 			<div class="Content-entry content-page">
-				<h2 class="titleSub">Actueel</h2>
-				<article class="page-sidebar-left u-gridCol8">	
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<article class="post-wrapper"<?php post_class() ?> id="post-<?php the_ID(); ?>">
-							<h4><?php the_title(); ?></h4>
-							<span><?php the_time( get_option( 'date_format' ) ); ?></span>
-							<div><?php the_content('Read the rest of this entry &raquo;'); ?></div>
-							<p><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
-							<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">Lees meer</a>
-						</article>
-						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
-					<?php endwhile; endif; ?>
-				<nav>
-					<div><?php next_posts_link('&laquo; Older Entries') ?></div>
-					<div><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-				</nav>
+				<h2 class="titleSub"><?php the_title(); ?></h2>
+				<article class="page-sidebar-left u-gridCol8">			
+					<?php the_content(); 
+						$image1 = get_field('image1');
+						$image2 = get_field('image2');
+						$image3 = get_field('image3');
+						$link1 = get_field('link-image1');
+						$link2 = get_field('link-image2');
+						$link3 = get_field('link-image3');
+						$video = get_field('video');
+						$button1 = get_field('button1');
+					?>
+					<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 				</article>
 				<article class="page-sidebar-right u-gridCol4">
 					<div class="">
@@ -68,11 +68,12 @@
 					
 				</article>	
 			</div>
-			<div class=" Content-entry content-page u-gridCol12">
+			<div class="extension Content-entry content-page u-gridCol12">
 					<article class="page-sidebar-right-extender-in u-gridCol4">	 	
 					</article>	
 			</div>	
 		</div>
+	<?php endwhile; endif; ?>
 	</div>
 
 <?php get_footer(); ?>

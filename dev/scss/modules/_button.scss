@@ -4,12 +4,22 @@
 // -> All buttons
 //
 // *************************************
-.button{
-  padding: 3% 10%;
+.column{
+	.button{
+	  padding: 3% 10%;
+	  background: $a-style;
+	  color:#fff;
+	  position: absolute;
+	  left:0;
+	  bottom: 10%;
+	  opacity: 0.7;
+	}
+}
+.gform_button, #submit{
+	padding: 2% 8%;
   background: $a-style;
   color:#fff;
-  position: absolute;
-  left:0;
-  bottom: 10%;
-  opacity: 0.7;
+  border: none;
+  float: right;
 }
+

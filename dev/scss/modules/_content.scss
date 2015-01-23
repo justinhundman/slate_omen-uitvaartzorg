@@ -1,3 +1,177 @@
 .Content {
+	.Content-article{
+		padding: 2% 4%;
+	}
+}
+.contact-wrapper{
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+}
+.titleSub{
+	color: #fff;
+	background: $a-style;
+	padding:1% 3.5%;
+}
+.iframe-home{
+	width: 100%;
+	height: 100%;
+}
+//contact-------------------------------------------------------------------------
+.adress-info{
+	padding: 0 0 0 11%;
+}
+.contact-form{
+	padding: 0 3.4%;
+} 
+//app pagina----------------------------------------------------------------------
+.phone-wrapper{
+	//text-align: center;
+	padding-top:2%;
+	text-align: center;
+}
+.googleplay{
+	display: block;
+	width:40%;
+	margin: 2% 0;
+}
+.gr-code{
+	width:25%;
+}  
+.page-text {
+	#gform_wrapper_5{
+		display: block!important;
+		h4{
+			width: 110.7%;
+		}
+	}
+	p{
+		padding-top:2%;
+	}
+}
+// bloemenboek -------------------------------------------
+#ngg-imagebrowser-688-96{
+	h3{
+		display: none;
+	}
+}
+// inspiratie style thumb------------------------------------------------------------------------------
+.ngg-album-compactbox{
+	border: none !important;
+	.Thumb{
+		border: none!important;
+	}
+}
+.ngg-album-compactbox img.Thumb {
+	border: #fff solid 4px!important;	
+&:hover{
+	border: #006991 4px solid !important;
+}
+}
+
+.ngg-gallery-thumbnail img, .ngg-navigation a.page-numbers, .next{
+border: 0 !important;
+
+&:hover{
+	background-color: #006991 !important;
+}
+}
+
+.ngg-album-gallery-image-counter{
+display: none;
+}
+
+.ngg-album-compactbox .Thumb{
+min-width: 228px !important;
+}
+
+.ngg-album-compactbox:before{
+display: none !important;
+}
+
+.ngg-album-compactbox:after{
+display: none !important;
+} 
+
+.ngg-album-compactbox {
+padding: 10px 10px 8px 10px!important;
+border: none !important;
+
+background: #ffffff;
+}
+.ngg-album-compact h4 .ngg-album-desc{
+	height: auto !important;
+	max-width: 100% !important;
+		color:#7A6E6E !important;
+			width: 100% !important;
+	background: none !important;
+}
+
+.ngg-album-compact h4{
+	margin:0!important;
+}
+
+// post page all -----------------------------------------------------------------
+.post-wrapper{
+	span{
+		padding: 0 5.4%;
+	}
+	> a{
+			padding: 1% 6%;
+ 			 background: $a-style;
+ 		 	color:#fff;
+  			border: none;
+  			float: right;
+
+	}
+}
+.sigel-wrapper{
+
+	h3{
+	color: #7A6E6E !important; 
+	background: none repeat scroll 0% 0% #DCD2D3 !important;
+	padding: 1% 5.4% !important;
+	width: 150% !important;
+	margin: 0px !important;
+	font-size: 16px !important;
+	clear: right !important;
+	}
+	.form-allowed-tags{
+		display: none;
+	}
+	#author, #email, #url, textarea{
+		clear: left;
+		display: block;
+	}
 
 }
+
+
+
+// responsive ---------------------------------------------------------------------
+@media all and (max-width: 1020px) { 
+  .tell-all{
+  	display: none;
+  }
+}
+@media all and (max-width: 640px) { 
+	.page-sidebar-right-extender-in{
+		display: none;
+	}
+	.phone-wrapper{
+		text-align: center;
+	}
+	.googleplay{
+		float: left;
+	}
+	.gr-code{
+		float: right;
+	}
+  .extension{
+  	display: none;
+  }
+  .content-page h4{
+  	width: 100% !important;  
+  }
+}
+

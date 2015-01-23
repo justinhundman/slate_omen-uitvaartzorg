@@ -72,3 +72,22 @@
 
 .Article-content {
 }
+    
+.post-wrapper div {
+  max-height: 200px;
+  overflow: hidden;
+  p{
+    text-align: justify;
+  }
+      .alignright{
+      float: right !important;
+      margin: 2% 0 2% 4%;
+    }
+}
+.post div p{
+  text-align: justify;
+  .alignright{
+      float: right !important;
+      margin: 2% 0 2% 4%;
+    }
+}

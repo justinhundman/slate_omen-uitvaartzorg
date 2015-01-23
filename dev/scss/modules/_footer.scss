@@ -3,6 +3,9 @@ footer{
 }
 .footer-wrapper{
 	background:$a-style;
+	position: relative;
+	z-index:5;
+	padding-bottom:5%;
 }
 .footer-bloginfo{
 	text-align:center;
@@ -17,3 +20,29 @@ footer{
 	color:#fff;
 	font-size:15px !important;
 }
+.footer-logo{
+	width:60%;
+	margin-top:2%;
+}
+
+ul{
+	margin-top: 0;
+}
+.widgettitle{
+	margin-bottom: 0;
+}
+.actueel-link{
+	background: #DCD2D3;
+	padding: 1% 6.3%;
+}
+.actueel-wrapper{
+	position: relative;
+}
+.menu.menu-1{
+	max-width: 100px;
+}
+@media all and (max-width: 640px) { 
+ .footer-wrapper{
+ 	text-align: center;
+ }
+} 

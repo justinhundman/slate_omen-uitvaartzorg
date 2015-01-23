@@ -9,10 +9,18 @@
 //------------------------------------------------------------------------------------------------------------- -->
 
 //nav------------------------------------------------------------------------------------------------->
-.header-midden{}
+.Bot-Nav{
+  width: 100%;
+}
+.animatie-nav{
+
+}
+.header-midden{
+}
 .header-midden-nav{}
 .Navigation-list{
   margin:0;
+  font-size: 13px;
 }
 .Navigation a.is-active{
 	background:006991;
@@ -21,13 +29,23 @@
 }
 .Navigation-listItem{
   float: left;
-  padding:2%;
+  padding:1.8%;
   margin:0;
   border-left: 10px solid white;
 }
 .Navigation-link{
   margin:0 auto;
 }
+.Navigation  > ul >.Navigation-listItem:nth-of-type(10){
+	border-right:10px solid white;
+	}
+  .sticky {
+    position: fixed; 
+    top: 0; 
+    z-index: 999999999999999999999999;
+    width: 100%;
+
+} 
 // einde nav ----------------------------------------------------------------------------------------->
 
 //------------------------------------------------------------------------------------------------------------- -->

@@ -9,7 +9,7 @@ ul.Navigation-list--dropdown {
     display: block;
     height: auto;
     position: absolute;
-    width: 100%;
+    width: 204%;
     line-height: 40px;
     z-index: 9999;
     margin-top: 27px;
@@ -24,8 +24,8 @@ ul.Navigation-list--dropdown li.Navigation-listItem {
     width: 100%;
     a{
        display: block;
-       margin-left: 18%;
-       
+       margin-left: 6%;
+       width: 300px;
     }
 }
 

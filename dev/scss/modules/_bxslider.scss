@@ -13,18 +13,23 @@
 
 /** RESET AND LAYOUT
 ===================================*/
-
+.Slider {
+  visibility: hidden;
+}
 .bx-wrapper {
 position: relative;
-margin: 0 auto 60px;
+margin: 0 auto 0px;
 padding: 0;
 *zoom: 1;
+img{
+	width: 100%;
+}
 }
 
 .bx-wrapper img {
 max-width: 100%; 
 display: block;
-}
+} 
 
 /** THEME
 ===================================*/
@@ -88,7 +93,7 @@ display: inline-block;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-background: #666;
+background: #fff;
 text-indent: -9999px;
 display: block;
 width: 10px;
@@ -102,7 +107,7 @@ border-radius: 5px;
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-background: #000;
+background: #006991;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
@@ -205,4 +210,15 @@ font-family: Arial;
 display: block;
 font-size: .85em;
 padding: 10px;
+}
+.header-onderkant-slider-text{
+	position: absolute;
+	bottom: 22%;
+	left: 10%;
+	font-size: 20px;
+	background: $a-style;
+	opacity: 0.8;
+	color: white;
+	padding: 2% 4%;
+	z-index: 1;
 }

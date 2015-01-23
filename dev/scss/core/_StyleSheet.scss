@@ -10,7 +10,7 @@
 	$base-shadow: 0px 2px 16px #7A6E6E;
 
 //font---------
-	$font-typografie: Quicksand;
+	$font-typografie: 'Open Sans', sans-serif;
 	$font-titel-color: #7A6E6E;
 	$font-subTitel-color: #fff;
 	$font-paragraafTitel-color: #fff;
@@ -51,38 +51,47 @@ body{
 }
 .Navigation-listItem.is-active{
 	background:$a-style;
-	a{
-	color:$base-navBack;
-	}
+	a.Navigation-link.is-active{
+			color:#fff; 
+		}
 }
 
 
 .Navigation-listItem:hover{
 	background:lighten($a-style, 10%);
-	a.Navigation-link{
-		color:$base-navBack;
+	a.Navigation-link--dropdown, {
+		color:#fff;
 	}
 }
 .Navigation-listItem--hasDropdown:hover{
 	background:lighten($a-style, 10%);
-	ul{
-		a.Navigation-link{
-		color:$a-normal;
-		}
-	}
+	
 	ul:hover{
-		a.Navigation-link{
+		a.Navigation-link:hover{
 			color:$base-navBack; 
 		}
 	}
-
 }
-.Navigation-listItem--hasDropdown.is-active:hover{
-	a.Navigation-link{
-			color:$base-navBack;
+.Navigation  > ul >.Navigation-listItem:nth-of-type(1):hover{
+	a{
+		color:#fff!important;
 	}
 }
-
+.Navigation  > ul >.Navigation-listItem:nth-of-type(8):hover{
+	a{
+		color:#fff!important;
+	}
+}
+.Navigation  > ul >.Navigation-listItem:nth-of-type(9):hover{
+	a{
+		color:#fff!important;
+	}
+}
+.Navigation  > ul >.Navigation-listItem:nth-of-type(10):hover{
+	a{
+		color:#fff!important;
+	}
+}
 .Nav-toggle {
   .Icon.Icon--inline {
    	fill:$base-borderColor1;
