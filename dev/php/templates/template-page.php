@@ -55,11 +55,6 @@ Template Name: page
 								<img  class="page-sidebar-right-img" src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>"/>
 							<?php endif; ?>	
 						<?php endif; ?>
-					</div>	
-					<div class="page-sidebar-right-image">
-						<?php if( !empty($video) ): ?>
-							<div class="page-sidebar-right-img"><?php echo $video; ?></div>
-						<?php endif; ?>
 					</div>				
 					<a class="page-sidebar-right-button"href="tel:0705146100">Bel binnen Nederland:<br /> 070-5146100</a>
 					<a class="page-sidebar-right-button"href="tel:0031705146100">Bel buiten Nederland:<br />  0031 70 514 61 00</a>

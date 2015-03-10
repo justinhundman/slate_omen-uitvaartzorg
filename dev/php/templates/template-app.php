@@ -22,7 +22,7 @@ Template Name: App page
 
 					
 					<a href="https://play.google.com/store/apps/details?id=com.wOmenUitvaartzorg"><img class="googleplay"src="<?php echo get_stylesheet_directory_uri(); ?>/img/googleplay.jpg" /></a>
-					<img class="gr-code"src="<?php echo get_stylesheet_directory_uri(); ?>/img/placeholder_qr_code.jpg" />
+					<img class="gr-code"src="<?php echo get_stylesheet_directory_uri(); ?>/img/Unitag_QRCode_omen_qr.png" />
 
 					<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 				</article>

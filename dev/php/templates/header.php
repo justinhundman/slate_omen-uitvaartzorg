@@ -125,7 +125,7 @@
                     </div>
                     <div>
                         <img class="header-onderkant-slider-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/header-onderkant-slider-image2.jpg" >
-                    </div>
+                    </div> 
                     <div>
                         <img class="header-onderkant-slider-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/header-onderkant-slider-image3.jpg" >
                     </div>
@@ -135,8 +135,9 @@
                     <div>
                         <img class="header-onderkant-slider-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/zonautoomen.jpg" >         
                     </div>
-            </div>   <!-- einde slider van de onderkant header -->    
-           <a class="header-onderkant-slider-text" href="/mijn-uitvaartwens-formulier"> Stel hier uw uitvaartwensen samen</a>
+            </div>   <!-- einde slider van de onderkant header -->  
+             <a class="header-onderkant-slider-text2" href="/condoleance-register"> Condoleanceregister online</a>  
+             <a class="header-onderkant-slider-text" href="/mijn-uitvaartwens-formulier"> Stel hier uw uitvaartwensen samen</a>
 
 </header>
 <!-- ------------------------------------------------------------------------------------------------------------------- --> 
